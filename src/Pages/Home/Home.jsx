@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -14,13 +15,17 @@ function Home() {
           </p>
 
           <div className="flex items-center justify-center gap-4">
-            <button className="px-6 py-3 text-lg bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-200 transition">
-              Book Now
-            </button>
+            <Link to="/booking">
+              <button className="px-6 py-3 text-lg bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-200 transition">
+                Book Now
+              </button>
+            </Link>
 
-            <button className="px-6 py-3 text-lg border border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition">
-              View Gallery
-            </button>
+            <Link to="/gallery">
+              <button className="px-6 py-3 text-lg border border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition">
+                View Gallery
+              </button>
+            </Link>
           </div>
         </div>
       </section>
